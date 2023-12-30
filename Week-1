@@ -1,0 +1,83 @@
+# WEEK1-HTML
+
+Problem Statement:
+When a user enters an URL in the browser, how does the browser fetch the desired result ?
+
+Topics:
+HTML:
+  Stands for Hyper text Markup Language.
+  It has many Tags, Attributes, Elements.
+  It is used to Create web pages.
+  HTML elements tell the browser how to display the content
+
+CSS :
+   CSS is the language we use to style a Web page.
+   CSS stands for Cascading Style Sheets
+   CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+   
+Overview of web request:
+   look up the location of the server hosting the website
+   make the connection to the server
+   send a request to get the specific page
+   handles the response from the server and
+   how it renders the page so you, the viewer, can interact with the website
+   
+Web Browser:
+   A software application used to access information on the World Wide Web is called a Web Browser.
+   When a user requests some information, the web browser fetches the data from a web server and then displays the webpage on the user’s screen.
+   
+What is the main functionality of the browser?
+   It retrieves the information from other parts of the web and display it on your desktop or Mobile devices.
+   The information is transferred using the Hypertext Transfer Protocol (http), Which defines how Text, video and Images are transmitted on the Web.
+   
+High Level Components of a browser:
+
+   https://web-dev.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/PgPX6ZMyKSwF6kB8zIhB.png?auto=format
+   
+Components :
+   The user interface:     This includes the address bar, back/forward button, bookmarking menu, etc. Every part of the browser display except the window where you see the requested page.
+   The browser engine:     Marshals actions between the UI and the rendering engine.
+   The rendering engine:   Responsible for displaying requested content. For example if the requested content is HTML, the rendering engine parses HTML and CSS, and displays the parsed content on the screen.
+   Networking:             For network calls such as HTTP requests, using different implementations for different platform behind a platform-independent interface.
+   UI backend:             Used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
+   JavaScript interpreter: Used to parse and execute JavaScript code.
+   Data storage:           This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
+   
+Rendering engine and its use:
+   The Rendering engine is a component of Web browser.
+   A Rendering engine is draws the text and images on the screen.
+   The engine draws structured text from a document(often Html), and formats it properly based on the given style declaration (often given in CSS). 
+   
+Parsers (HTML, CSS, etc):
+   Parsing means analyzing and converting a program into an internal format that a runtime environment can actually run.
+   A Parser is a structured markup processing tool.
+   The browser reads  raw bytes of the Html file from the disk(or network) and transform that in to characters. 
+   The Characters are further parsed in to tokens.
+   As soon as the parser reaches the line like <link rel=“stylesheet” href=“style.css”>, a request is made to fetch the css file, style.
+   
+Script Processors:
+   The Scrip Processor node is interface is an Audio node ,Audio processing module that is linked two buffers 
+   1 - is containing input Audio data
+   2 - is containing the processed output Audio data
+   An event implementing the Audio processing event interface is send to the object each time the input buffer contains new data and the event handler terminates when it has filled the output buffer with data. 
+   
+Script Processor Node:
+   https://developer.mozilla.org/en-US/docs/Web/API/ScriptProcessorNode/webaudioscriptprocessingnode.png
+   
+Tree Construction:
+   The input to the tree construction stage is a sequence of tokens from the tokenization stage .
+   The tree construction stage is associated with DOM object when a parser is created.
+   The output of the stage consist of dynamically modifying or extending that document DOM Tree.
+   
+Order of script processing:
+   Order of script processing
+   Activation
+   Generation
+   Processing
+   Completion
+   
+Layout and Painting:
+   The Layout event captures render tree construction position and size calculation in the Timeline.
+   When Layout is completed ,the browser issues “paint Setup” and “Paint” events, which convert the render tree to pixels on the screen.
+   Layout and paint varies based on the size of the document , and the applied style and the device is running on.
+
